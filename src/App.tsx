@@ -13,7 +13,8 @@ function App() {
   }, []);
 
   // State management
-  const [wordToGuess, setWordToGuess] = useState(getWord());
+  const [wordToGuess] = useState(getWord());
+
   const [guessedLetters, setGuessedLetters] = useState<string[]>([]);
 
   // Compute incorrect and game status values
